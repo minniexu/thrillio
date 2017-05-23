@@ -38,15 +38,15 @@ public class Launch {
 		
 	}
 	
-	private static void startBookmarking() {
+	private static void start() {
 		//System.out.println("\n2. Start bookmarking ...");
 		
 		for (User user : users) {
-			View.bookmark(user, bookmarks);
+			View.browse(user, bookmarks);
 		}
 	}
 	public static void main(String[] args) {
 		loadData();
-		startBookmarking();
+		start();
 	}
 }
